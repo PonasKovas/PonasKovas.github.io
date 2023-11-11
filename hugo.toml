@@ -1,0 +1,18 @@
+baseURL = 'https://PonasKovas.github.io/'
+languageCode = 'en-us'
+title = 'PonasKovas'
+theme = 'hugo-kiera'
+
+[author]
+    name = "PonasKovas"           #Author name
+    github = "PonasKovas"         #Github username
+    # gitlab = ""         #Gitlab username
+    # linkedin = ""       #LinkedIn username
+    # facebook = ""       #Facebook username
+    # twitter = ""        #Twitter username
+    # instagram = ""      #Instagram username
+    # stackoverflow = ""  #StackOverflow username
+    # devto = ""          #Dev.to username
+
+[params]
+    tagline = "🦀 A transmute a day keeps the borrow checker at bay 🚀"
