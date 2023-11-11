@@ -208,7 +208,7 @@ incro.thread(move |incro| {
 });
 {{< /highlight >}}
 
-`force_emit` is the same as `emit` but without the check we just added (original version). So now space is pressed it will be released regardless, and the only point where our thread can stop is before pressing space.
+`force_emit` is the same as `emit` but without the check we just added (original version). So now if space is pressed it will be released regardless, and the only point where our thread can stop is before pressing space.
 
 And there you have it! A BLAZINGLY FAST ⚡ autoclicker with FEARLESS CONCURRENCY 🚀
 
@@ -216,7 +216,7 @@ Not only can you cheat in Minecraft with it, you can cheat in any game, or just 
 
 ### Sad news
 
-As fast our autoclicker is, the rest of the programs on your computer are much slower for some reason, and you can't really simulate very precise input. I tried really hard to automate "god-bridging" in Minecraft, which requires very precisely timed mouse clicks, to a precision of a few milliseconds, and even though Incro can do that easily, the rest of the stack doesn't seem to react correctly - random delays appear. I don't know if this limitation is introduced by my desktop environment (I use KDE, tried both wayland and X11), or maybe Minecraft itself. If anyone knows how to fix this pls tell me.
+As fast as our autoclicker is, the rest of the programs on your computer are much slower for some reason, and you can't really simulate very precise input. I really wanted to automate "god-bridging" in Minecraft, which requires very precisely timed mouse clicks, to a precision of a few milliseconds, and even though Incro can do that easily, the rest of the stack doesn't react correctly - random delays appear, some events get "glued". I don't know if this limitation is introduced by my desktop environment (I use KDE, tried both wayland and X11), or maybe Minecraft itself.
 
 ## Closing remarks
 
